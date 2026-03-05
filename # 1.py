@@ -1,3 +1,19 @@
+# Create a dictionary where each key holds a list of data
+abl_data = {
+    "inhibitor": ["PD180970", "Ponatinib", "Imatinib", "Risvodetinib", "Nilotinib"],
+    "energy": [-11.35, -10.54, -10.10, -9.97, -9.18],  # Numbers only, no ± symbols
+    "bbb_permeable": [True, False, False, False, False] # Boolean values for logic
+}
+
+# To see the energy of the lead candidate (PD180970):
+print(f"Lead Candidate Energy: {abl_data['energy'][0]} kcal/mol")
+
+# Instruction: Find the drug with the best (lowest) energy
+min_energy = min(abl_data["energy"])
+index = abl_data["energy"].index(min_energy)
+best_drug = abl_data["inhibitor"][index]
+
+print(f"The simulation identified {best_drug} as the most potent binder.")
 # 1. THE DATA (Dictionary)
 # We use 1 for 'Yes' (BBB Permeable) and 0 for 'No' to allow for math
 study_data = {
