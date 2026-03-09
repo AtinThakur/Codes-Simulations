@@ -1,4 +1,5 @@
 # ---------------------------------------
+# Study reference: https://doi.org/10.1016/j.bbrc.2025.153175
 # PARAMETERS AND THEIR WEIGHTS
 # ---------------------------------------
 parameters = [
@@ -127,3 +128,4 @@ print("\nDrug Ranking Based on 10-Parameter Model\n")
 
 for i,(drug,sc) in enumerate(ranking,1):
     print(i, drug, "| Score:", round(sc,2))
+
