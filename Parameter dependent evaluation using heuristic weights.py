@@ -1,5 +1,4 @@
 # ---------------------------------------
-# Study reference: https://doi.org/10.1016/j.bbrc.2025.153175
 # PARAMETERS AND THEIR WEIGHTS
 # ---------------------------------------
 parameters = [
@@ -32,7 +31,8 @@ for i in range(len(parameters)):
 # THEORY USED IN THE MODEL
 # ---------------------------------------
 print("""
-THEORY: Weighted Multi-Parameter Drug Ranking Model
+Study Reference: https://doi.org/10.1016/j.bbrc.2025.153175
+Theory implemented: Weighted Multi-Parameter Drug Ranking Model
 
 This script ranks c-Abl inhibitors using a weighted scoring approach.
 Each parameter comes from common in-silico drug discovery metrics.
@@ -128,4 +128,5 @@ print("\nDrug Ranking Based on 10-Parameter Model\n")
 
 for i,(drug,sc) in enumerate(ranking,1):
     print(i, drug, "| Score:", round(sc,2))
+
 
